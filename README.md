@@ -11,7 +11,7 @@ into the appropriate format for importing them into [Portfolio Performance](http
   - Trine: https://github.com/StegSchreck/PP-Trine-Parser
   - Auxmoney: https://github.com/StegSchreck/PP-Auxmoney-Parser
 - Download the statement export from each P2P sites you are using into the appropriately named subfolders of `FINANCE_FOLDER`
-- Make sure that you convert Excel files into CSV files (e.g. Bondora, Swaper, ...)
+- Some sites only over Excel file export, which will be converted into CSV files by this script (Bondora, Lande, Swaper)
 - If you are using Auxmoney, you should pass in the credentials as environment variables as `AUXMONEY_USERNAME` and `AUXMONEY_PASSWORD`
   - One possibility is to use them like this: `AUXMONEY_USERNAME='your@email.de' AUXMONEY_PASSWORD='password' ./convert.sh`
 - Execute this script `./convert.sh`
