@@ -16,7 +16,7 @@ def main(input_file: str, output_file: str):
       writer = csv.writer(outfile)
       _ = next(reader)  # ignore broken header row
 
-      writer.writerow(["Transaction date","Transaction type","Description","Underlying LO","ISIN","Credit (€)","Debit (€)"])
+      writer.writerow(["Transaction date","Transaction type","Description","Underlying LO","ISIN","Credit (€)","Debit (€)","Transaction ID"])
       for row in reader:
           if not row[5]:
               # Column 7 is not empty, so move its value to column 6 and remove it
